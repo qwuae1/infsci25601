@@ -1,5 +1,5 @@
 const express = require("express");
-const employees = require("./employees");
+const employees = require("./employees.js");
 const bodyParser = require("body-parser");
 
 exports.getAll = (req, res) => {
@@ -15,11 +15,16 @@ exports.getAll = (req, res) => {
 };
 
 exports.deleteById = (req, res) => {
-  employees.deleteOne({ _id: req.params.id }).then(res.redirect("/employees"));
+  console.log(req.params.id);
+  employees.deleteOne({ employeeID: req.params.id }).then(res.redirect("/employees"));
 };
 
+
+
+
+
 exports.addemployee = (req, res) => {
-  // console.log(req.body);
+  console.log(req.body);
   const newemployee = new employees({
     employeeID: req.body.employeeID,
     FirstName: req.body.FirstName,
@@ -35,13 +40,12 @@ exports.employeeById = (req, res) => {
     if (err) {
       res.status(404).send({ msg: "404 not found" });
     } else {
-      res.render("updateemployee", {
-        employee: employee[0]
-      });
+      res.json(
+        employee[0]
+      );
     }
   });
 };
-
 exports.updateemployee = (req, res) => {
 
   employees.updateOne(

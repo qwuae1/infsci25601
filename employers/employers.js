@@ -7,7 +7,15 @@ const employerSchema = new Schema(
       type: Number,
       required: true
     },
-    name: {
+    FirstName: {
+      type: String,
+      required: true
+    },
+    LastName: {
+      type: String,
+      required: true
+    },
+    Email: {
       type: String,
       required: true
     }

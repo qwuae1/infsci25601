@@ -4,7 +4,7 @@ const Schema = mongoose.Schema;
 
 const employeeSchema = new Schema(
   {
-    employeeID: {
+    id: {
       type: Number,
       required: true
     },

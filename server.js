@@ -35,8 +35,8 @@ app.get('/', function(request, response) {
   });
 });
 
-//router to update page
-app.get('/employee/:id/update',employeesController.employeeById);
+//get employee by id
+app.get('/employee/:id/',employeesController.employeeById);
 
 
 // Get all employees info
@@ -44,6 +44,8 @@ app.get('/employees', employeesController.getAll);
 
 // Delete employee by id
 app.get('/employee/:id/delete', employeesController.deleteById);
+
+
 
 // Add a new employee
 app.post('/employee', employeesController.addemployee);
@@ -58,8 +60,9 @@ app.get('/depts', deptsController.getAll);
 
 app.post('/depts', deptsController.save);
 
+app.get('/dept/:id/employee', deptsController.employeeById);
 
-app.post('/depts/SelectedValue',deptsController.deptByName);
+app.post('/depts/name',deptsController.deptByName);
 
 
 app.post('/employers', employersController.save);
