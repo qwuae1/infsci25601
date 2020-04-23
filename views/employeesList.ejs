@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>employees List</title>
+  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+<ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link active" href="/employees">employees List</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/depts">depts List</a>
+  </li>
+</ul>
+  
+<body>
+  
+  <div class="container">
+
+  
+<br>
+  <table class="table">
+  <thead class="thead-dark">
+    <tr>
+      <th>Employee ID</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <%employees.forEach(employee => { %>
+      <tr>
+        <td><%= employee.employeeID %></td>
+        <td><%= employee.FirstName %></td>
+        <td><%= employee.LastName %></td>
+        <td><%= employee.Email %></td>
+      </tr>
+      <%})%>
+  </tbody>
+</table>
+  
+  
+  </div>
+</body>
+</html>

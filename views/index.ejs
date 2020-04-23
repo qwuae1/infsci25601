@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Home Page</title>
+  </head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+<ul class="nav nav-tabs">
+  <li class="nav-item"> 
+    <a class="nav-link active" href="/">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/employees">Employees List</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="/depts">Depts List</a>
+  </li>
+</ul>
+  
+<body>
+ <header>
+  </header>
+<div class="container">
+ <table class="table">
+   <thead class="thead-light">
+       <tr>
+      <th scope="col">APIs</th>
+      <th scope="col">Description</th>
+    </tr>
+  </thead>
+       <tr>
+      <td > GET /employees </td>
+      <td >  The end point to get all the employees . </td>
+    </tr>
+    <tr>
+      <td> GET /api/movies </td>
+      <td>  The end point to get all information about movies. </td>
+    </tr>
+    <tr>
+      <td> GET /api/movies/:_id </td>
+      <td>  The end point to get a movie by id. </td>
+    </tr>
+   <tr>
+     <td> POST /employee</td>
+      <td>  The end point to post a new employee </td>
+    </tr>
+    <tr>
+      <td> POST /employee/:id </td>
+      <td>  The end point to add multiple movies at the same time (insert many like json array). </td>
+    </tr>
+   <tr>
+      <td> PUT /api/movies/:_id </td>
+      <td>  The end point to update the movie by id. </td>
+    </tr>
+    <tr>
+      <td> DELETE /employee/:id/delete </td>
+      <td>  The end point to delete the employee by id. </td>
+    </tr>
+   <tr>
+    <tr>
+      <td> GET /api/oscars </td>
+      <td>  The end point to get the oscars information. </td>
+    </tr>
+   <tr>
+      <td> GET /api/oscars/:_id/movies </td>
+      <td>  The end point to get all the movies that has that specific oscar . </td>
+    </tr>
+   <tr>
+      <td> POST/api/oscar</td>
+      <td>  The end point to add oscars information. </td>
+    </tr>
+   <tr>
+      <td> PUT /api/oscar/:_id </td>
+      <td>  The end point to update the oscars information by id. </td>
+    </tr>
+      <td> DELET /api/oscar/:_id </td>
+      <td>  The end point to delet the oscars information by id. </td>
+    </tr>
+
+
+
+
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+          integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+          crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+  
+</body>
+</html>
