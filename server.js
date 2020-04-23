@@ -10,8 +10,8 @@ const app = express();
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 
-const mongoDB="mongodb+srv://qwuae:37561212o@cluster0-ynxj1.azure.mongodb.net/test?retryWrites=true&w=majority"
-// const mongoDB = process.env.MongoURI;
+
+const mongoDB = process.env.MongoURI;
 
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true}).then(() => {
   console.log('MongoDB is connected...');

@@ -3,22 +3,16 @@ const Schema = mongoose.Schema;
 
 const deptSchema = new Schema(
   {
-    // id: {
-    //   type: Number,
-    //   required: true
-    // },
-    code: {
-      type: String,
+
+    id: {
+      type: Number,
       required: true
     },
     name: {
       type: String,
       required: true
     },
-    grade: {
-      type: Number,
-      required: true
-    },
+
     employees: {
       type: Array,
       required: true

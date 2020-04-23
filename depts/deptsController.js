@@ -3,9 +3,8 @@ const depts = require("./depts.js");
 
 exports.save = (req, res) => {
   const newdept = new depts({
-    code: req.body.code,
+    id: req.body.id,
     name: req.body.name,
-    grade: req.body.grade,
     employees: req.body.employees,
     employerid: req.body.employerid
   });

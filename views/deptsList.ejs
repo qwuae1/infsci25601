@@ -28,19 +28,19 @@
   <table class="table">
   <thead class="thead-dark">
     <tr>
-        <th scope="col">dept Code</th>
-      <th scope="col">dept Name</th>
-      <th scope="col">dept Grade */10</th>
-      <th scope="col">employee(s)</th>
-      <th scope="col">employer</th>
+        <th scope="col">ID</th>
+      <th scope="col">Dept Name</th>
+
+      <th scope="col">Employee</th>
+      <th scope="col">Employer</th>
     </tr>
   </thead>
   <tbody>
     <%depts.forEach(dept => { %>
     <tr>
-    <td><%=dept.code %> </td>
+    <td><%=dept.id %> </td>
         <td><%=dept.name %> </td>
-          <td><%=dept.grade %></td>
+
           <td><%=dept.employees %></td>
           <td><%=dept.employerid %></td>
       </tr>
