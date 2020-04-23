@@ -39,16 +39,16 @@ app.get('/', function(request, response) {
 app.get('/employee/:id/update',employeesController.employeeById);
 
 
-//Get all employees info
+// Get all employees info
 app.get('/employees', employeesController.getAll);
 
-//Delete employee by id
+// Delete employee by id
 app.get('/employee/:id/delete', employeesController.deleteById);
 
-//Add a new employee
+// Add a new employee
 app.post('/employee', employeesController.addemployee);
 
-//Update employee by id
+// Update employee by id
 app.post('/employee/:id', employeesController.updateemployee);
 
 
